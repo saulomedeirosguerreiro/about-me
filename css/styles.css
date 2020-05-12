@@ -1,25 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
+    font-family: Arial, Helvetica, sans-serif;
     background:  linear-gradient(#e66465, #9198e5) no-repeat;
     background-size: auto 100vh;
+}
+
+aside {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 100vw;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    background-color: lightgray;
+}
+
+footer i {
+    font-size: 2em;
+    margin: 10px;
 }
 
 .dialog {
     background-color: white;
     border: 2px solid black;
     border-radius: 5px;
-    padding: 5px;
-    height: 5vh;
+    padding: 0.3em;
+    margin: 0.5em;
+    height: 12vh;
+    width: 40vw;
+    font-size: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
     box-shadow: 10px 10px 10px;
 }
 
-.avatar-dialog{
-    display: flex;
-    flex-direction: column;
-}
-
 .avatar {
-    width: 150px;
-    height: 150px;
+    width: 39.5vw;
+    height: 27.5vh;
 }
 
 
@@ -36,23 +67,76 @@ body{
     border-bottom: 4px solid white;
     color: brown;
     font-weight: bold;
-    font-size: large;
+    font-size: 1.5em;
+    margin:0.5em;
 }
 
 .menu a:hover {
     border-bottom: 4px solid #9198e5;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: lightgray;
+
+@media(min-width:400px){
+    .dialog {
+        font-size: 1.1em;
+    }
+    
+    .avatar {
+        width: 45vw;
+        height:  40.5vh;
+    }
 }
 
-footer i {
-    font-size: 2em;
-    margin: 10px;
+@media(min-width:700px){
+    .dialog {
+        font-size: 1.5em;
+    }
+    
+    .avatar {
+        width: 32.5vw;
+        height: 47.5vh;
+    }
+}
+
+@media(min-width:900px){
+    header {
+        float: right;
+        width: 75vw;
+    }
+    
+    
+    aside {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25vw;
+        height: 75vh;
+    }
+      
+    .dialog {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 0.3em;
+        margin: 0.5em;
+        width: 20vw;
+        height: 8vh;
+        box-shadow: 10px 10px 10px;
+        font-size: 1em;
+    }
+    
+    
+    .avatar {
+        width: 12vw;
+        height: 12vw;
+    }
+    
+    
+    .menu  {
+        list-style: none;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }    
 }
