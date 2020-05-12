@@ -39,6 +39,20 @@ body{
     font-size: large;
 }
 
-a:hover {
+.menu a:hover {
     border-bottom: 4px solid #9198e5;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: lightgray;
+}
+
+footer i {
+    font-size: 2em;
+    margin: 10px;
 }
