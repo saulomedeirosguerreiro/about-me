@@ -15,10 +15,12 @@ aside {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 2em;
     justify-content: center;
-    height: 75vh;
+    height: 30vh;
     width: 100vw;
 }
+
 
 footer {
     position: fixed;
@@ -31,7 +33,16 @@ footer {
 
 footer i {
     font-size: 2em;
-    margin: 10px;
+    margin: 0.4em;
+}
+
+section {
+    display: grid;
+    overflow: scroll;
+    width: 100vw;
+    height: 50vh;
+    padding: 0.5em;
+    grid-row-gap: 0.5em;
 }
 
 .dialog {
@@ -48,9 +59,18 @@ footer i {
     box-shadow: 10px 10px 10px;
 }
 
+h2 {
+    margin-top: 2.5em;
+    margin-left: 0.5em;
+    color: black;
+    opacity: 0.5;
+
+}
+
 .avatar {
-    width: 39.5vw;
-    height: 27.5vh;
+    width: 50.5vw;
+    height: 35.5vh;
+
 }
 
 
@@ -75,6 +95,18 @@ footer i {
     border-bottom: 4px solid #9198e5;
 }
 
+.grid-project {
+    border: 1px solid lightgray;
+    padding: 1em;
+    text-align: center;
+    background-color: #9198e5;
+    font-weight: bold;
+    font-size: 1.5em;
+    opacity: 0.6;
+    height: 10vh;
+    box-shadow: 10px 10px 10px;
+}
+
 
 @media(min-width:400px){
     .dialog {
@@ -92,51 +124,46 @@ footer i {
         font-size: 1.5em;
     }
     
-    .avatar {
-        width: 32.5vw;
-        height: 47.5vh;
+    section {
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: auto auto auto;
+        width: 100vw;
+        height: 30vh;
+        padding: 0.5em;
+        grid-row-gap: 0.5em;
+        grid-column-gap: 1em;
     }
-}
 
-@media(min-width:900px){
-    header {
-        float: right;
-        width: 75vw;
+    .grid-project {
+        border: 1px solid lightgray;
+        padding: 1em;
+        text-align: center;
+        background-color: #9198e5;
+        font-weight: bold;
+        font-size: 1.5em;
+        opacity: 0.6;
+        height: 13vh;
+        box-shadow: 10px 10px 10px;
     }
-    
-    
+
     aside {
         float: left;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-        width: 25vw;
-        height: 75vh;
-    }
-      
-    .dialog {
-        background-color: white;
-        border: 2px solid black;
-        border-radius: 5px;
-        padding: 0.3em;
-        margin: 0.5em;
-        width: 20vw;
-        height: 8vh;
-        box-shadow: 10px 10px 10px;
-        font-size: 1em;
+        margin-bottom: 2em;
+        justify-content: center;
+        height: 40vh;
+        width: 100vw;
     }
     
+}
+
+@media(min-width:900px){ 
     
     .avatar {
-        width: 12vw;
-        height: 12vw;
+        width: 25vw;
+        height: 49.5vh;
     }
-    
-    
-    .menu  {
-        list-style: none;
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-    }    
 }
