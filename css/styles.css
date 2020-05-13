@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Annie Use Your Telescope', cursive;
     background-color: pink;
     background-size: auto 100vh;
 }
@@ -25,7 +25,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 50%;
     width: 100vw;
 }
 
@@ -42,6 +42,7 @@ footer {
 footer i {
     font-size: 2em;
     margin: 0.4em;
+    color:#7159c1;
 }
 
 
@@ -75,6 +76,7 @@ footer i {
     margin-bottom: 0.3em;
     color: gray;
     height: auto;
+    font-family: 'Bangers', cursive;
     
 }
 
@@ -83,19 +85,20 @@ footer i {
     border: 2px solid black;
     border-radius: 5px;
     padding: 0.3em;
-    margin: 0.5em;
+    margin: 0.2em;
     height: 12vh;
     width: 40vw;
     font-size: 1em;
     overflow: hidden;
     text-overflow: ellipsis;
     box-shadow: 10px 10px 10px;
+    font-family: 'Bangers', cursive;
 }
 
 .avatar {
-    width: 50.5vw;
-    height: 35.5vh;
-}
+        width: 45vw;
+        height:  29.5vh;
+    }
 
 
 .menu  {
@@ -120,22 +123,36 @@ footer i {
 }
 
 
-
+@media(min-width:300px){
+    .portfolio .grid-items {
+        font-size: 1.1em;  
+    }
+}
 
 @media(min-width:400px){
+
+    .portfolio .grid-items {
+        font-size: 1.4em;  
+    }
+
     .dialog {
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
     
     .avatar {
         width: 45vw;
-        height:  40.5vh;
+        height:  37.5vh;
     }
 
 
 }
 
 @media(min-width:700px){
+
+    .portfolio .grid-items {
+        font-size: 1.8em;  
+    }
+
     .dialog {
         font-size: 1.5em;
     }
@@ -159,13 +176,26 @@ footer i {
         height: 40vh;
         width: 100vw;
     }
+
+    .avatar {
+        width: 25vw;
+    }
     
 }
 
 @media(min-width:900px){ 
+
     
+    .portfolio .grid-items {
+        font-size: 2.3em;  
+    }
+
+    .dialog {
+        font-size: 2em;
+    }
     .avatar {
         width: 25vw;
-        height: 49.5vh;
+        height: 42.5vh;
     }
 }
+
