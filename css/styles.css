@@ -2,82 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
-    font-family: 'Annie Use Your Telescope', cursive;
-    background-color: pink;
-    background-size: auto 100vh;
+    font-family: 'Roboto Slab', serif;
 }
-
-header {
-    background-color: #e66465;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-}
-
-.avatar-dialog {
-    float: left;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-    width: 100vw;
-}
-
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
     text-align: center;
-    background-color: lightgray;
+    background-color: #F5F5F5;
+    color: rgba(0,0,0,0.7);
 }
 
-footer i {
-    font-size: 2em;
-    margin: 0.4em;
-    color:#7159c1;
-}
-
-
-.portfolio{
-    width: 100vw;
-    height: 50vh;
-}
-
-.portfolio .grid {
-    display: grid;
-    grid-template-columns: auto;
-    align-content: center;
+.menu {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    text-align: center;
-    gap: 1em 0.5em;
-    overflow: scroll;
-}
-
-.portfolio .grid-items {
-    border: 1px solid lightgray;
-    background-color: #9198e5;
-    font-weight: bold;
+    background-color: black;
     font-size: 1.5em;
-    opacity: 0.6;
-    box-shadow: 10px 10px 10px;
-    margin:  0 1em;
 }
 
-.portfolio h2 {
-    margin-left: 1em;
-    margin-bottom: 0.3em;
-    color: gray;
-    height: auto;
-    font-family: 'Bangers', cursive;
-    
+.menu .profile{
+    width: 100vw;
+    margin-left: 0.3em;
+}
+
+.profile img {
+    width: 10vw;
+    height: 8vh;
+    border-radius: 50%;
+    border: 2px solid lightgreen;
+}
+
+.menu .texto {
+    display: flex;
+    margin: 0.5em;
+}
+
+.texto  a{
+    margin: 0.5em;
+    border-bottom: 2px solid black; 
+}
+
+.texto  a:hover{
+    border-bottom: 2px solid lightgreen;; 
+}
+
+.menu .contato {
+    display: flex;
+    margin: 0.5em;
+}
+
+.contato  a{
+    margin: 0.3em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.menu a:hover {
+    text-shadow: 0px 0px 3px darkgray;
 }
 
 .dialog {
@@ -85,117 +73,76 @@ footer i {
     border: 2px solid black;
     border-radius: 5px;
     padding: 0.3em;
-    margin: 0.2em;
+    margin: 0.5em;
     height: 12vh;
     width: 40vw;
     font-size: 1em;
     overflow: hidden;
     text-overflow: ellipsis;
-    box-shadow: 10px 10px 10px;
+    box-shadow: 10px 10px 10px ;
     font-family: 'Bangers', cursive;
 }
 
-.avatar {
-        width: 45vw;
-        height:  29.5vh;
-    }
-
-
-.menu  {
-    list-style: none;
-    display:flex;
-    justify-content: space-around;
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.menu a {
-    text-decoration: none;
-    border-radius: 3px;
-    border-bottom: 4px solid white;
-    color: brown;
-    font-weight: bold;
-    font-size: 1.5em;
-    margin:0.5em;
+.home i {
+    font-size: 8em;
+    padding-top: 0.5em;
+    color:darkolivegreen;
+    text-shadow: 0px 0px 10px;
 }
 
-.menu a:hover {
-    border-bottom: 4px solid #9198e5;
-}
-
-
-@media(min-width:300px){
-    .portfolio .grid-items {
-        font-size: 1.1em;  
+.portfolio {
+    padding: 2em;
+    margin-top: 10em;
+    min-height: 100vh;
+    background-color: black;
+    color:white;
+  }
+  
+  .portfolio h2 {
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+  }
+  
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+  }
+  
+  @media (min-width: 560px) {
+    .portfolio .grid {
+      grid-template-columns: 240px 240px;
     }
-}
+  }
 
-@media(min-width:400px){
-
-    .portfolio .grid-items {
-        font-size: 1.4em;  
+  @media (min-width: 880px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(3, 260px);
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 8em - 48px);
     }
 
-    .dialog {
-        font-size: 1.3em;
+    .profile img {
+        width: 4vw;
     }
+  }
+  
+  .portfolio figure {
+    text-align: center;
+  }
+  
+  .img-portfolio {
+    height: 180px;
+    width: 240px;
+    border: 4px solid darkolivegreen;
+    border-radius: 25%;
     
-    .avatar {
-        width: 45vw;
-        height:  37.5vh;
-    }
-
-
-}
-
-@media(min-width:700px){
-
-    .portfolio .grid-items {
-        font-size: 1.8em;  
-    }
-
-    .dialog {
-        font-size: 1.5em;
-    }
-
-    .avatar-dialog {
-        margin-bottom: 2em;
-    }
-   
-    .portfolio .grid{
-        overflow: hidden;
-        gap: 3.5em 2em;
-        grid-template-columns: repeat(3, auto);
-    }
-
-    .portfolio .grid-items {
-        padding: 1em;
-        height: 15vh;
-    }
-
-    .avatar-dialog {
-        height: 40vh;
-        width: 100vw;
-    }
-
-    .avatar {
-        width: 25vw;
-    }
-    
-}
-
-@media(min-width:900px){ 
-
-    
-    .portfolio .grid-items {
-        font-size: 2.3em;  
-    }
-
-    .dialog {
-        font-size: 2em;
-    }
-    .avatar {
-        width: 25vw;
-        height: 42.5vh;
-    }
-}
-
+  }

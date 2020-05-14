@@ -5,45 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saulo Medeiros</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bangers&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/851525ff62.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bangers&display=swap" rel="stylesheet">
 <body>
     <header>
         <nav class="menu">
-            <a href="#">Sobre</a>
-            <a href="#">Portifólio</a>
-            <a href="#">Contato</a>
-        </nav>
-    </header>
-    <div class="content">
-        <aside class="avatar-dialog">
-            <img class="avatar" src="assets/avatar.png" alt="avatar"> 
-            <div>
-                <p class="dialog">Olá para todos! <br> Sou <strong>Saulo Medeiros</strong></p>
-                <p class="dialog">Desenvolvedor! <strong>#imersaoCSS</strong></p>
-            </div>  
-        </aside>
-
-        <section class="portfolio">
-            <h2>Projetos</h2>
-            <div class="grid">
-                <div class="grid-items">Flexuc</div>
-                <div class="grid-items">GoGreen</div>
-                <div class="grid-items">Flex Authentication</div>  
-                <div class="grid-items">Flex Export</div>
-                <div class="grid-items">Jornada do Gerente</div>
-                <div class="grid-items">My Version of Zelda</div>  
+            <div class="profile">
+                <img src="./assets/profile.jpg" alt="profile">
             </div>
-        </section>
-    </div>
-    <footer>
-        <a href="https://github.com/saulomedeirosguerreiro/" target="_blank">
-            <i class="fab fa-github-alt"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/saulomedeirosguerreiro/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-    </footer>
-   
+            <div class="texto"> 
+                <a href="#home"><i class="fas fa-home"></i></a>
+                <a href="#">about</a>
+                <a href="#portfolio">portfolio</a>
+            </div>
+            <div class="contato">
+                    <a href="https://github.com/saulomedeirosguerreiro/" target="_blank">
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/saulomedeirosguerreiro/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/saulo.medeiros.54" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                     </a>
+            </div>
+        </nav>
+        <!--<h1 class="site-title">Vanessa Me Tonini</h1>
+        <h2 class="site-subtitle">web developer</h2>-->
+      </header>
+      <section class="home" id="home">
+        <i class="fab fa-earlybirds"></i>
+        <div>
+            <p class="dialog">Olá, Seja Bem-vindo! Sou <strong>Saulo Medeiros</strong></p>
+            <p class="dialog">Desenvolvedor! <strong>#imersaoCSS</strong></p>
+        </div> 
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <h2>Portfólio</h2>
+
+        <div class="grid">
+			<figure>
+				<img class="img-portfolio" src="./assets/flexscan.png" alt="FlexScan">
+				<figcaption>Flex Scan</figcaption>
+			</figure>
+			<figure>
+				<img class="img-portfolio" src="./assets/jornadagerente.png" alt=">JornadoGerente">
+				<figcaption>Jornado do Gerente</figcaption>
+			</figure>
+			<figure>
+				<img class="img-portfolio" src="./assets/flexuc.png" alt="Flexuc">
+				<figcaption>Flexuc</figcaption>
+			</figure>
+			<figure>
+				<img class="img-portfolio" src="./assets/flexexport.png" alt="FlexExport">
+				<figcaption>Flex Export</figcaption>
+            </figure>
+            <figure>
+				<img class="img-portfolio" src="./assets/gogreen.png" alt="Gogreen">
+				<figcaption>GoGreen</figcaption>
+			</figure>
+			<figure>
+				<img class="img-portfolio" src="./assets/modelagem3d.png" alt="Modelagem3D">
+				<figcaption>Modelagem Zelda 3D</figcaption>
+			</figure>
+		</div>
+      </section>
+      <footer>
+        <p> &copy; 2020 <strong>Saulo Medeiros Guerreiro</strong></p>
+      </footer>
+          
 </body>
 </html>
