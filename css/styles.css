@@ -125,14 +125,30 @@ footer {
     animation: animation-colors 60s linear infinite;
 }
 
-.portfolio {
-    padding: 2em;
+.about{
     margin-top: 10em;
+    padding: 2em;
+    min-height: 55vh;
+    color:black;
+}
+
+.about p {
+    margin-top: 1em;
+}
+
+.about img {
+  margin-bottom: 1em;
+  border-radius: 5%;
+}
+
+.portfolio {
+    padding: 1em;
     min-height: 100vh;
     background-color: black;
     color:white;
   }
   
+  .about h2,
   .portfolio h2 {
     font-family: 'Annie Use Your Telescope', cursive;
     margin-bottom: 1.5em;
@@ -177,6 +193,14 @@ footer {
     border: 2px solid darkolivegreen;
     border-radius: 25%;
     animation: animation-border-colors 60s linear infinite;
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+    }
   }
 
   @keyframes animation-border-colors {
