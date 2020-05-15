@@ -34,6 +34,7 @@ footer {
     height: auto;
     border-radius: 50%;
     border: 2px solid lightgreen;
+    object-fit: conver;
     animation: animation-border-colors 60s linear infinite;
 }
 
